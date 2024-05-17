@@ -6,16 +6,24 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
+        {{#if user}}
         <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Links
-        </a>
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Links
+          </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="/links">All Links</a>
+            <a class="dropdown-item" href="/links">All Links</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="/links/add">Add a Link</a>
+            <a class="dropdown-item" href="/links/add">Add a Link</a>
         </div>
       </li>
+      <li class="nav-item">
+        <a href="/profile" class="nav-link">Profile</a>
+      </li>
+      <li class="nav-item">
+        <a href="/logout" class="nav-link">Logout</a>
+      </li>
+        {{/if}}
       </ul>
     </div>
   </div>
