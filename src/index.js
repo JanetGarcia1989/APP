@@ -9,6 +9,10 @@ const passport = require('passport');
 
 const { database } = require('./keys');
 
+//DEPLOY
+//const {PORT} = require('./config.js');
+
+
 //Initializations
 const app = express();
 require('./lib/passport');
